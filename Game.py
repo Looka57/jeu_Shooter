@@ -51,7 +51,7 @@ class Game:
         
     def update (self, screen):
         # afficher le score sur l'ecran
-        font = pygame.font.SysFont("Helvetica", 24, ) #creer la police
+        font = pygame.font.SysFont("Helvetica", 54, ) #creer la police
         # police d'ecriture personalisé
         # font = pygame.font.Font("assets/mycustomFont.ttf", 25)
         score_texte = font.render(f"Score: {self.score}", 1, (0,0,0))#crrer un texte avec couleur
