@@ -4,7 +4,7 @@ from Game import Game
 
 # definir une clock
 clock = pygame.time.Clock()
-FPS = 60
+FPS = 100
 
 # GENERERER LA FENETRE DU JEU
 # Le titre
