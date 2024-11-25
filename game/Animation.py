@@ -6,7 +6,7 @@ class AnimateSprite(pygame.sprite.Sprite):
     def __init__(self, sprite_name, size=(200,200)):
         super().__init__()
         self.size = size
-        self.image = pygame.image.load(f'assets/{ sprite_name }.png')
+        self.image = pygame.image.load(f'static/assets/{ sprite_name }.png')
         self.image = pygame.transform.scale(self.image, size)
         self.current_image = 0 #pour commencer l'animation a l'image 0
         self.images = animations.get(sprite_name)
@@ -46,7 +46,7 @@ def load_animation_images(sprite_name):
     # charger les 24 images du sprites du dossiers
     images = []
     # recuperer le chemin du dossier pour le sprite
-    path = f'assets/{sprite_name}/{sprite_name}'
+    path = f'static/assets/{sprite_name}/{sprite_name}'
     # boucler le dossier des sprites
     for num in range(1, 24):
         image_path = path + str(num) + '.png'
